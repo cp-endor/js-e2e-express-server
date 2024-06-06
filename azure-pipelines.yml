@@ -11,7 +11,7 @@ pool:
   vmImage: "self-hosted"
 
 steps:
-- task: AdvancedSecurity-Publish-Local@1
-        displayName: Publish '.\sarif\' to Advanced Security
-        inputs:
-          SarifsInputDirectory: $(Build.SourcesDirectory)\sarif\
+  - task: AdvancedSecurity-Publish-Local@1
+    displayName: Publish '.\sarif\' to Advanced Security
+    inputs:
+      SarifsInputDirectory: $(Build.SourcesDirectory)\sarif\
